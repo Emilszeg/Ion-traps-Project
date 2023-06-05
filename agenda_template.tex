@@ -1,0 +1,137 @@
+\documentclass[11pt,a4paper]{article} 
+
+\usepackage[english]{babel} %needs to specified for minutes package (else it will be in German)
+\usepackage{a4wide}%For a wider spacing of the text (smaller left/right margin)
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb  for the check and cross symbol
+\usepackage{pifont}% http://ctan.org/pkg/pifont    for the check and cross symbol
+\usepackage{setspace}
+\usepackage{minutes}
+
+\pagestyle{plain}
+
+%more memmorable commands to make the checked and crossed symbols
+\newcommand{\done}{\ding{51}}%
+\newcommand{\fail}{\ding{55}}%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Important: This template compiles without errors
+% always check errors, also the yellow ones, even if you get a PDF
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+\begin{Minutes}{Minutes of: Title meeting}
+
+
+%Add relevant date, time and location here
+\minutesdate{03-06-2023} %Write the date of when you finish the minutes
+\starttime{09:00}
+\endtime{10:00}
+\location{Room number/location}
+
+%Add relevant names here
+\participant{Names of attendees} 
+\minutetaker{Name minute taker}
+%The minute taker makes notes during the meetings. This is demanding and makes it harder to participate.
+%The minute taker should make concise and clear notes and rewrite it afterwards so it is readable and understandable
+%to someone who did not attend the meeting. In some cases this does not have to be verbatim, as long as te main arguments
+%doubts and conclusions are clear. The minute taker should ask questions if something is unclear
+\moderation{Name chair} 
+%The chair is in charge of the meeting. This does not mean that the chair explains and discusses everything (this is actually considered to be impolite).
+%The expert on the topic should explain the situation and elaboreate. 
+%Instead, the chair makes sure that everyone can speak, keeping an eye on who wants to speak and in which order
+%people speak in case multiple people have something to say. The chair makes sure everyone feels inclueded and heard.
+%The chair also keeps an eye on the time such that the most the important topics are discussed. 
+%We recommend during/after long discussions the chair also gives some time to the minute taker to finalise/summarise the notes or ask questions.
+\missingExcused{None} %In case people are not present
+
+
+\maketitle
+
+
+
+\newpage
+
+\section{Announcements} %1-5 minutes
+%The chair asks everyone if there are some announcements that might be of interest for the meeting
+%Maybe someone needs to leave sooner due to another appointment
+Supervisor needs to leave 10 minutes earlier due to a conference.
+
+\section{Approval of agenda} %1-2minutes
+%The chair checks with everyone if they checked the agenda for today and if something is missing
+%In some cases everyone can agree to change the order of topics
+%For example, if someone needs to leave earlier but their input is important on a certain topic
+%The chair might also mention which topics are most important or will take more time
+No comments
+
+\section{Approve previous minutes} %1-5 minutes
+%At this stage a brief summary of the previous meeting is given and the minutes are approved. 
+%If there are any mistakes or important comments note them here.
+The previous minutes are approved, no comments
+
+\section{Previous Tasks}%1-2 minutes
+%The minute taker of this meeting should prepare the list of tasks (except checks and crosses) 
+%BEFORE the meeting. This way they can quickly be checked at this stage of the meeting.
+%Re-assign tasks if someone did not do a task but still has to do it.
+
+\begin{itemize}
+\item{Everyone: last week, \newline read the literature provided for the project, \done}
+\item{Student X: today, \newline bring cake to make a meeting nicer, \fail (forgot)}
+\end{itemize}
+
+\task{Student X}[next meeting]{Bring cake to the meeting}
+
+
+
+
+\section{Topic 1}%Change Topic 1 to a more instructive title
+%This is the first major topic on the agenda for today. 
+%Make concise notes during the conversations, ask questions if something is unclear and rewrite for clarity at the end of the meeting. 
+%If during the discussion on this topic a task is assigned to student X, then you could use the \task command. 
+%A list of tasks is automatically created at the end of the file
+Some notes on the meeting \dots 
+\task{Student X}[before the next meeting]{The data needs to be downloaded and merged into a single csv file}. Some more notes \dots
+\task{Student Y}[7-06-2023]{Create a github page and invite collaborators}. And possibly more notes \dots
+
+%If during the meeting another important topic comes to mind the chair makes note and, if appropriate,
+%postpones this to the `remaining discussion points'. This way the topics and discussions remain clear.
+
+\section{Topic 2}
+%Another possible topic. 
+
+\section{Remaining discussion points} %0-10 minutes
+%During the meeting someone might realise they still have another point they would like to discuss
+%The chair asks if someone has a point they would like to discuss or reminds the group of a 
+%previously raised point (see topic 1). However, if it is a larger topic, it might be better to postpone
+%to the next meeting to better prepare or have more time to go into detail.
+
+\section{Final question round}%0-10 minutes
+%The chair gives each person a moment to ask some questions. It is always good to ask each attendee specfically if they have a question
+%This helps with inclusiveness and gives the possibility to quieter people to speak up
+
+\section{Next Meeting}%1-3 minutes
+%Make sure a next meeting is planned, people are busy!
+%Make a note, if that is okay with the person of interest, if someone cannot attend so people
+%do not forget.
+The next meeting will be on Friday 5th of June between 13:00-14:00 in C2.211. 
+Student X, is absent do to hospital appointment
+
+\section{List of Tasks}
+%The following command automatically generates a list of tasks if the \task command was properly used
+\listoftasks
+
+\section{Closing the meeting}
+%Note the closing time of the meeting.
+The chair closes the meeting at 13:37
+
+
+\end{Minutes}
+\end{document}
+
+
