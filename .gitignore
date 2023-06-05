@@ -12,6 +12,9 @@
 *.cb2
 .*.lb
 *.pdf
+*.minTsk
+*.mtc
+*.ptc1
 
 ## Intermediate documents:
 *.dvi
