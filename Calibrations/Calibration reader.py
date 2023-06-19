@@ -40,7 +40,7 @@ def pixel_to_wave(pixel, calibration):
 
 def time_to_pixel(time):
     return 531.1077 * time * 1000
-wave = [585.25, 609.61, 639.23, 650.65]
+wave = [585.25, 609.62, 639.23, 650.23]
 print(valley_dataframe.iloc[valleys2[[0, 1, 3, 4]]])
 pixel = [time_to_pixel(u) for u in valley_dataframe[valley_dataframe.columns[1]][valleys2[[0, 2, 3, 4]]]]
 import sympy
@@ -54,7 +54,7 @@ awnser = sympy.nonlinsolve(system_equations, [S, B, C, D])
 print(awnser)
 
 print(pixel_to_wave(time_to_pixel(6.59/1000), awnser.args[0]))
-print(pixel_to_wave(time_to_pixel(5.75/1000), awnser.args[0]))
+print(pixel_to_wave(time_to_pixel(4.52/1000), awnser.args[0]))
 print(pixel_to_wave(time_to_pixel(3.46/1000), awnser.args[0]))
 print(pixel_to_wave(time_to_pixel(4.35/1000), awnser.args[0]))
 
