@@ -32,3 +32,10 @@ plt.plot(wavelength, df[df.columns[1]])
 plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage (V)")
 plt.title("Flashlight spectrum")
+
+#%%
+avaraged = []
+avarage_length = 1000
+for i in range(0, len(wavelength), avarage_length):
+    avaraged.append(np.mean(df[df.columns[1]][i:i+avarage_length]))
+plt.plot(wavelength[::avarage_length], avaraged)
