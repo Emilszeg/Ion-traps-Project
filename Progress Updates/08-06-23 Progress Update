@@ -1,0 +1,9 @@
+Over the past couple of days, Robin, Emils and I have worked on separate but related parts of the project. The idea is to merge these projects in the upcoming days.
+
+I (Tristan) have mainly been focusing on the construction of the ECDL in both the Littman-Metcalf and the Littrow configuration. In both these configurations, I have measured the effect that optical feedback has on both lasing point and output power. My latest contribution was setting up an optical fibre at the end of the laser, so it can be used as an input for the spectrometer that Robin has constructed.
+
+Robin has mainly been focusing on the construction of the spectrometer. The idea is to spatially separate the different components of a light source, and to analyse the results using a CCD and microcontroller that Emils has been programming. Robin has constructed the spectrometer in such a way that it can intake various inputs to be analysed. 
+
+Emils has mainly been focusing on the construction and programming of the CCD and microcontroller. The CCD is an arrangement of light sensitive pixels, which we will use to analyse the spatial separation of the light source. The CCD will be placed in the spectrometer that Robin has constructed.
+
+It goes without saying that this is a broad overview of the work we have done thus far, and also that we are not limited to our own projects. We have worked together to overcome difficulties in each of our respective projects, and will continue to do so.
