@@ -1,7 +1,7 @@
 # %%
 import sympy
 
-l, p, S, B, C, D = sympy.symbols('l p S B C D')
+p, S, B, C, D = sympy.symbols('p S B C D')
 equ = S + p * B + p**2 * C + p**3 * D
 print(equ.subs(p, 1736.72))
 print(equ.subs(p, 2756.45))
