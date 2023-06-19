@@ -6,7 +6,7 @@ import scipy.signal
 from math import sqrt
 
 # df = pandas.read_csv(".\laser measurments\\no feedback no lasing 25mA 19-06.csv", delimiter=",", header=11)
-df = pandas.read_csv("no fb lasing 28mA 19-06.csv", delimiter=",", header=11)
+df = pandas.read_csv("fb 28mA zoom photo 65 19-06.csv", delimiter=",", header=11)
 # debug = df[df.columns[5]]
 # print("hello")
 print(df.drop([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
@@ -32,8 +32,8 @@ wavelength = [pixel_to_wave(time_to_pixel(u), awnser) for u in df[df.columns[0]]
 plt.plot(wavelength, df[df.columns[1]])
 plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage of CCD (V)")
-plt.title("Laser spectrum no feedback lasing at 25mA")
-plt.savefig(".\Results laser spectrum\\no feedback lasing 28mA.png")
+plt.title("Laser spectrum with feedback at 28mA with grating at $5.03^\circ$")
+plt.savefig(".\Results laser spectrum\\feedback 28mA photo 65.png")
 
 
 #%%
@@ -44,5 +44,5 @@ for i in range(0, len(wavelength), avarage_length):
 plt.plot(wavelength[::avarage_length], avaraged)
 plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage of CCD (V)")
-plt.title("Avaraged Laser spectrum no feedback lasing at 25mA")
-plt.savefig(".\Results laser spectrum\\no feedback lasing 28mA avaraged.png")
+plt.title("Avaraged Laser spectrum with feedback at 28mA with grating at $5.03^\circ$")
+plt.savefig(".\Results laser spectrum\\Avaraged feedback 28mA photo 65.png")
