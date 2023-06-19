@@ -51,7 +51,7 @@ system_equations = [equ.subs(p, pixel[0]) - wave[0], equ.subs(p, pixel[1]) -
                     wave[1], equ.subs(p, pixel[2])-wave[2], equ.subs(p, pixel[3])-wave[3]]
 
 awnser = sympy.nonlinsolve(system_equations, [S, B, C, D])
-print(awnser.args[0])
+print(awnser)
 
 print(pixel_to_wave(time_to_pixel(6.59/1000), awnser.args[0]))
 print(pixel_to_wave(time_to_pixel(5.75/1000), awnser.args[0]))
