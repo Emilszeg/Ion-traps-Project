@@ -24,11 +24,22 @@ df.plot(df.columns[0], df.columns[1])
 plt.scatter(df[df.columns[0]][valleys], df[df.columns[1]][valleys], c="r")
 #%%
 # valley_dataframe.plot(valley_dataframe.columns[0], valley_dataframe.columns[1])
-valleys2 = scipy.signal.find_peaks(-valley_dataframe[valley_dataframe.columns[2]], width=40, distance=30, height=-2.55)[0]
-print(valleys2)
-print(valley_dataframe[valley_dataframe.columns[2]][valleys2])
+valleys2 = scipy.signal.find_peaks(-valley_dataframe[valley_dataframe.columns[2]], width=40, distance=30, height=-2.55)
+#Error
+errors = []
+for i in range(len(valleys2[0])):
+    width = valleys2[1]['widths'][i]
+    error_width = width /4
+    pos = int(valleys2[0][i] - error_width)
+    time = valley_dataframe[valley_dataframe.columns[1]][pos]
+    errors.append(valley_dataframe[valley_dataframe.columns[1]][valleys2[0][i]] - time)
+print(errors)
+# print(valleys2[1]['widths']* 1e-8)
+# Waardes voor error
+print("seconds\n", valley_dataframe[valley_dataframe.columns[1]][valleys2[0]], "\n\nVoltage\n", valley_dataframe[valley_dataframe.columns[2]][valleys2[0]])
+print(valley_dataframe[valley_dataframe.columns[2]][valleys2[0]])
 valley_dataframe.plot(valley_dataframe.columns[1], valley_dataframe.columns[2])
-plt.scatter(valley_dataframe[valley_dataframe.columns[1]][valleys2], valley_dataframe[valley_dataframe.columns[2]][valleys2], c="r")
+plt.scatter(valley_dataframe[valley_dataframe.columns[1]][valleys2[0]], valley_dataframe[valley_dataframe.columns[2]][valleys2[0]], c="r")
 
 #%%
 df.plot(df.columns[0], df.columns[1])
