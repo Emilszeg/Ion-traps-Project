@@ -31,4 +31,4 @@ wavelength = [pixel_to_wave(time_to_pixel(u), awnser) for u in df[df.columns[0]]
 plt.plot(wavelength, df[df.columns[1]])
 plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage (V)")
-plt.title("Calibration curve")
+plt.title("Flashlight spectrum")
