@@ -5,14 +5,14 @@ import numpy as np
 import scipy.signal
 from math import sqrt
 
-df = pandas.read_csv("cal 19-06.csv", delimiter=",", header=11)
+df = pandas.read_csv("cal 20-06.csv", delimiter=",", header=11)
 # debug = df[df.columns[5]]
 # print("hello")
 print(df.drop([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 df.plot(df.columns[0], df.columns[1])
 
 #%%
-valleys = scipy.signal.find_peaks(-df[df.columns[1]], threshold=0.01, height=-2.55)[0]
+valleys = scipy.signal.find_peaks(-df[df.columns[1]], threshold=0.014, height=-2.55)[0]
 print(valleys)
 print(df[df.columns[1]][valleys[0]])
 d = {'seconds': df[df.columns[0]][valleys], 'voltage': df[df.columns[1]][valleys]}
@@ -24,11 +24,22 @@ df.plot(df.columns[0], df.columns[1])
 plt.scatter(df[df.columns[0]][valleys], df[df.columns[1]][valleys], c="r")
 #%%
 # valley_dataframe.plot(valley_dataframe.columns[0], valley_dataframe.columns[1])
-valleys2 = scipy.signal.find_peaks(-valley_dataframe[valley_dataframe.columns[2]], width=40, distance=30, height=-2.55)[0]
-print(valleys2)
-print(valley_dataframe[valley_dataframe.columns[2]][valleys2])
+valleys2 = scipy.signal.find_peaks(-valley_dataframe[valley_dataframe.columns[2]], width=5, distance=50, height=-2.5)
+#Error
+errors = []
+for i in range(len(valleys2[0])):
+    width = valleys2[1]['widths'][i]
+    error_width = width /4
+    pos = int(valleys2[0][i] - error_width)
+    time = valley_dataframe[valley_dataframe.columns[1]][pos]
+    errors.append(valley_dataframe[valley_dataframe.columns[1]][valleys2[0][i]] - time)
+print(errors)
+# print(valleys2[1]['widths']* 1e-8)
+# Waardes voor error
+print("seconds\n", valley_dataframe[valley_dataframe.columns[1]][valleys2[0]], "\n\nVoltage\n", valley_dataframe[valley_dataframe.columns[2]][valleys2[0]])
+print(valley_dataframe[valley_dataframe.columns[2]][valleys2[0]])
 valley_dataframe.plot(valley_dataframe.columns[1], valley_dataframe.columns[2])
-plt.scatter(valley_dataframe[valley_dataframe.columns[1]][valleys2], valley_dataframe[valley_dataframe.columns[2]][valleys2], c="r")
+plt.scatter(valley_dataframe[valley_dataframe.columns[1]][valleys2[0]], valley_dataframe[valley_dataframe.columns[2]][valleys2[0]], c="r")
 
 #%%
 df.plot(df.columns[0], df.columns[1])
@@ -40,9 +51,9 @@ def pixel_to_wave(pixel, calibration):
 
 def time_to_pixel(time):
     return 531.1077 * time * 1000
-wave = [585.25, 609.61, 639.23, 650.65]
-print(valley_dataframe.iloc[valleys2[[0, 1, 3, 4]]])
-pixel = [time_to_pixel(u) for u in valley_dataframe[valley_dataframe.columns[1]][valleys2[[0, 2, 3, 4]]]]
+wave = [585.25, 609.62, 639.23, 650.23]
+print(valley_dataframe.iloc[valleys2[0][[0, 1, 3, 4]]])
+pixel = [time_to_pixel(u) for u in valley_dataframe[valley_dataframe.columns[1]][valleys2[0][[0, 2, 3, 4]]]]
 import sympy
 print(pixel)
 p, S, B, C, D = sympy.symbols('p S B C D')
@@ -54,7 +65,7 @@ awnser = sympy.nonlinsolve(system_equations, [S, B, C, D])
 print(awnser)
 
 print(pixel_to_wave(time_to_pixel(6.59/1000), awnser.args[0]))
-print(pixel_to_wave(time_to_pixel(5.75/1000), awnser.args[0]))
+print(pixel_to_wave(time_to_pixel(4.52/1000), awnser.args[0]))
 print(pixel_to_wave(time_to_pixel(3.46/1000), awnser.args[0]))
 print(pixel_to_wave(time_to_pixel(4.35/1000), awnser.args[0]))
 
