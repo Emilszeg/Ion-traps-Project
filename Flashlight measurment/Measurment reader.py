@@ -18,7 +18,7 @@ def pixel_to_wave(pixel, calibration):
 
 def time_to_pixel(time):
     return 531.1077 * time * 1000
-awnser = (455.437295891728, 0.0990275839844787, -1.91594053559167e-5, 2.641851052438e-9)
+awnser = (477.954995157329, 0.0679395645886716, -5.0904350757044e-6, 5.55365871246419e-10)
 
 print(pixel_to_wave(time_to_pixel(6.59/1000), awnser))
 print(pixel_to_wave(time_to_pixel(5.75/1000), awnser))
@@ -32,3 +32,10 @@ plt.plot(wavelength, df[df.columns[1]])
 plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage (V)")
 plt.title("Flashlight spectrum")
+
+#%%
+avaraged = []
+avarage_length = 1000
+for i in range(0, len(wavelength), avarage_length):
+    avaraged.append(np.mean(df[df.columns[1]][i:i+avarage_length]))
+plt.plot(wavelength[::avarage_length], avaraged)
