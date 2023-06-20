@@ -37,7 +37,7 @@ plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage of CCD (V)")
 plt.title("Laser spectrums no feedback at different currents")
 plt.legend(["28mA", "25mA"])
-plt.savefig(".\Results laser spectrum\\no feedback lasers.png")
+# plt.savefig(".\Results laser spectrum\\no feedback lasers.png")
 
 
 #%%
@@ -49,8 +49,33 @@ for i in range(0, len(wavelength1), avarage_length):
 plt.plot(wavelength1[::avarage_length], avaraged1)
 for i in range(0, len(wavelength2), avarage_length):
     avaraged2.append(np.mean(df2[df2.columns[1]][i:i+avarage_length]))
-plt.plot(wavelength1[::avarage_length], avaraged2)
+plt.plot(wavelength2[::avarage_length], avaraged2)
+plt.legend(["28mA", "25mA"])
 plt.xlabel("Wavelength (nm)")
 plt.ylabel("Voltage of CCD (V)")
 plt.title("Avaraged Laser spectrum no feedback lasing at 25mA")
 plt.savefig(".\Results laser spectrum\\no feedback lasers avaraged.png")
+peak_dataframe1 = pandas.DataFrame(data={"wavelength": wavelength1[::avarage_length], "voltage": avaraged1})
+peak_dataframe2 = pandas.DataFrame(data={"wavelength": wavelength2[::avarage_length], "voltage": avaraged2 + avaraged1[-1] - avaraged2[-1]})
+print(peak_dataframe1)
+peak1 = scipy.signal.find_peaks(-peak_dataframe1[peak_dataframe1.columns[1]], height=-2.55, distance=100)[0]
+peak2 = scipy.signal.find_peaks(-peak_dataframe2[peak_dataframe2.columns[1]], height=-2.55, distance=100)[0]
+print(peak1)
+#%%
+plt.plot(wavelength1[::avarage_length], avaraged1, label="28mA")
+plt.plot(wavelength2[::avarage_length], avaraged2 + avaraged1[-1] - avaraged2[-1], label="25mA")
+plt.scatter(peak_dataframe1[peak_dataframe1.columns[0]][peak1], peak_dataframe1[peak_dataframe1.columns[1]][peak1], c="r")
+plt.scatter(peak_dataframe2[peak_dataframe2.columns[0]][peak2], peak_dataframe2[peak_dataframe2.columns[1]][peak2], c="r")
+result_half1 = scipy.signal.peak_widths(-peak_dataframe1[peak_dataframe1.columns[1]], peak1, rel_height=0.5)
+result_half2 = scipy.signal.peak_widths(-peak_dataframe2[peak_dataframe2.columns[1]], peak2, rel_height=0.5)
+plt.hlines(y = -result_half1[1], xmin=peak_dataframe1[peak_dataframe1.columns[0]][int(result_half1[2])], xmax=peak_dataframe1[peak_dataframe1.columns[0]][int(result_half1[3])], color="C2", label="FWHM")
+plt.hlines(y = -result_half2[1], xmin=peak_dataframe2[peak_dataframe2.columns[0]][int(result_half2[2])], xmax=peak_dataframe2[peak_dataframe2.columns[0]][int(result_half2[3])], color="C2")
+# plt.legend(["28mA", "25mA", "FWHM"])
+plt.legend()
+plt.xlabel("Wavelength (nm)")
+plt.ylabel("Voltage of CCD (V)")
+plt.title("Avaraged Laser spectrum no feedback lasing at different currents")
+
+#%%
+print("FWHM of peak at 25mA", peak_dataframe2[peak_dataframe2.columns[0]][int(result_half2[3])] - peak_dataframe2[peak_dataframe2.columns[0]][int(result_half2[2])], "nm")
+print("FWHM of peak at 28mA", peak_dataframe1[peak_dataframe1.columns[0]][int(result_half1[3])] - peak_dataframe1[peak_dataframe1.columns[0]][int(result_half1[2])], "nm")
