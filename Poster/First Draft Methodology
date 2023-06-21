@@ -1,0 +1,3 @@
+The beam of a diode laser is pointed into a reflection grating, which spatially separates the various component wavelengths of the beam. The
+first order diffraction is directed into a mirror mounted on a high-precision rotation stage, which reflects a certain wavelength back into 
+the grating and subsequently into the diode laser, providing optical feedback. By adjusting the angle on the rotation stage, we can select which wavelength is providing optical feedback. The zeroth order diffraction is used as the output for our ECDL after being directed into an optical fibre.
