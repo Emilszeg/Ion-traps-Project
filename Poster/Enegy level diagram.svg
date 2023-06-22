@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="84.212776mm"
+   height="73.484833mm"
+   viewBox="0 0 84.212776 73.484833"
    version="1.1"
    id="svg36630"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.0800906"
-     inkscape:cx="285.80486"
-     inkscape:cy="462.47985"
+     inkscape:zoom="1.0331277"
+     inkscape:cx="84.694276"
+     inkscape:cy="133.57497"
      inkscape:window-width="1440"
      inkscape:window-height="900"
      inkscape:window-x="0"
@@ -36,15 +36,15 @@
   <defs
      id="defs36627">
     <rect
-       x="43.091902"
-       y="383.21013"
-       width="93.109289"
+       x="43.091904"
+       y="383.21014"
+       width="93.109291"
        height="48.47839"
        id="rect52168" />
     <rect
-       x="60.020864"
-       y="400.13909"
-       width="85.414306"
+       x="60.020863"
+       y="400.1391"
+       width="85.414307"
        height="37.705414"
        id="rect52144" />
     <clipPath
@@ -65,9 +65,10 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2">
+     inkscape:label="Layer 2"
+     transform="translate(-35.905851,-81.645805)">
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.374;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:"
+       style="fill:none;stroke:#ff0000;stroke-width:0.374;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 83.713713,116.62534 c 4.123331,-5.66201 8.139659,-5.3043 12.069465,-0.0847 4.022993,5.48411 8.040362,5.19471 11.978552,-0.084 3.66053,-4.61816 7.55673,-5.6828 11.94536,-0.0838"
        id="path15891"
        sodipodi:nodetypes="cccc" />
@@ -193,7 +194,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-35.905851,-81.645805)">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.562;stroke-dasharray:none;stroke-opacity:1"
        d="M 50.349668,149.77203 H 119.54322"
@@ -227,15 +229,15 @@
        d="m 80.640257,87.158826 h 3.242818"
        id="path50620-3" />
     <path
-       style="fill:#00ffff;stroke:#000000;stroke-width:0.561999;stroke-dasharray:0.56199902, 0.56199902;stroke-opacity:1;marker-start:;stroke-dashoffset:0"
+       style="fill:#00ffff;stroke:#000000;stroke-width:0.561999;stroke-dasharray:0.561999, 0.561999;stroke-dashoffset:0;stroke-opacity:1"
        d="m 62.692089,93.291076 0.151066,47.434504"
        id="path51207" />
     <path
-       style="fill:#00ffff;stroke:#000000;stroke-width:0.561999;stroke-dasharray:0.561999, 0.561999;stroke-dashoffset:0;stroke-opacity:1;marker-start:"
+       style="fill:#00ffff;stroke:#000000;stroke-width:0.561999;stroke-dasharray:0.561999, 0.561999;stroke-dashoffset:0;stroke-opacity:1"
        d="M 82.045065,143.57063 82.196131,96.136134"
        id="path51207-5" />
     <path
-       style="fill:#00ffff;stroke:#000000;stroke-width:0.561999;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:"
+       style="fill:#00ffff;stroke:#000000;stroke-width:0.561999;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 45.274851,87.184098 45.071255,150.09539"
        id="path51982" />
     <text
