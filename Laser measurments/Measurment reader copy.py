@@ -61,6 +61,7 @@ plt.title("Avaraged Laser spectrum no feedback lasing at 25mA")
 plt.savefig(".\Results laser spectrum\\no feedback lasers avaraged relative.svg")
 peak_dataframe1 = pandas.DataFrame(data={"wavelength": wavelength1[::avarage_length][4900:5800], "voltage": avaraged1[4900:5800]})
 peak_dataframe2 = pandas.DataFrame(data={"wavelength": wavelength2[::avarage_length][4900:5800], "voltage": avaraged2[4900:5800]})
+
 print(peak_dataframe1)
 peak1 = scipy.signal.find_peaks(peak_dataframe1[peak_dataframe1.columns[1]], height=0.3, distance=100)[0]
 peak2 = scipy.signal.find_peaks(peak_dataframe2[peak_dataframe2.columns[1]], height=0.1, distance=100)[0]
