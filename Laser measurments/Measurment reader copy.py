@@ -46,6 +46,7 @@ avaraged2 = []
 avarage_length = 100
 fig = plt.figure(figsize=(10, 6))
 plt.rcParams.update({'font.size': 18})
+fig.set_facecolor((0,0,0,0))
 for i in range(0, len(wavelength1), avarage_length):
     avaraged1.append((-np.mean(df1[df1.columns[1]][i:i+avarage_length]) + df1[df1.columns[1]][400000])/0.4069576699999997)
 plt.plot(wavelength1[::avarage_length][4900:5800], avaraged1[4900:5800])
