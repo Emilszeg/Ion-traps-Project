@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="421.64148mm"
-   height="315.31757mm"
-   viewBox="0 0 421.64148 315.31757"
+   width="401.50311mm"
+   height="201.99579mm"
+   viewBox="0 0 401.50311 201.99579"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.34134604"
-     inkscape:cx="588.84527"
-     inkscape:cy="540.50722"
+     inkscape:zoom="0.37779052"
+     inkscape:cx="722.62269"
+     inkscape:cy="432.77952"
      inkscape:window-width="1041"
      inkscape:window-height="703"
      inkscape:window-x="0"
@@ -37,14 +37,19 @@
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" /><defs
      id="defs2"><rect
-       x="241.92475"
+       x="1855.9044"
+       y="1359.3531"
+       width="2116.5059"
+       height="1528.3918"
+       id="rect28070" /><rect
+       x="241.92474"
        y="236.16464"
        width="233.28458"
-       height="48.960962"
+       height="48.96096"
        id="rect1359" /><rect
-       x="503.52776"
-       y="214.65763"
-       width="67.030637"
+       x="503.52777"
+       y="214.65762"
+       width="67.03064"
        height="24.737497"
        id="rect52976" /><linearGradient
        id="linearGradient45530"><stop
@@ -3615,7 +3620,8 @@
        y2="76.388496" /></defs><g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2"><ellipse
+     inkscape:label="Layer 2"
+     transform="translate(-11.531413,-59.430668)"><ellipse
        style="fill:#000000;stroke-width:0.899554"
        id="path53468"
        cx="154.83025"
@@ -3681,7 +3687,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(459.17561,29.044613)"><path
+     transform="translate(447.64419,-30.386055)"><path
        style="display:inline;fill:none;stroke:#000000;stroke-width:0.720517px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        d="m -141.62562,185.71179 c 58.900122,25.91516 68.539424,4.87811 45.7749,-64.57312"
        id="path4592-2"
@@ -3703,7 +3709,7 @@
        id="path4642-6-8-5"
        sodipodi:nodetypes="cc" /><path
        style="display:inline;fill:#f2f2f2;stroke:#000000;stroke-width:1.09995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19989, 6.5997;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       d="m -446.81148,31.721607 -0.2893,202.797573"
+       d="m -446.81148,31.721607 -0.2893,200.335623"
        id="path4642-6-8-3"
        sodipodi:nodetypes="cc" /><path
        style="display:inline;fill:#cccccc;stroke:#000000;stroke-width:1.09995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19989, 6.5997;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
@@ -3715,7 +3721,7 @@
        id="path4642-6-8-3-0"
        sodipodi:nodetypes="cc" /><path
        style="display:inline;fill:#cccccc;stroke:#000000;stroke-width:1.09995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19989, 6.5997;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       d="m -47.055692,231.19354 -219.206978,0.21981"
+       d="m -47.947846,231.32099 -218.314824,0.0924"
        id="path4642-6-8-3-0-2"
        sodipodi:nodetypes="cc" /><path
        style="display:inline;fill:#cccccc;stroke:#000000;stroke-width:1.09995;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.19989, 6.5997;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
@@ -4751,7 +4757,7 @@
              style="stop-color:#89A4B6" /></linearGradient><polygon
            style="fill:url(#linearGradient3672);fill-opacity:1;stroke:#000000;stroke-width:0.75"
            i:knockout="Off"
-           points="3.918,17.738 0.375,17.738 0.375,19.863 3.918,19.863 3.918,21.989 0.375,21.989 0.375,24.115 3.918,24.115 3.918,26.241 0.375,26.241 0.375,28.722 10.295,28.722 10.295,0.375 0.375,0.375 0.375,2.855 3.918,2.855 3.918,4.981 0.375,4.981 0.375,7.108 3.918,7.108 3.918,9.234 0.375,9.234 0.375,11.36 3.918,11.36 3.918,13.486 0.375,13.486 0.375,15.611 3.918,15.611 "
+           points="3.918,21.989 0.375,21.989 0.375,24.115 3.918,24.115 3.918,26.241 0.375,26.241 0.375,28.722 10.295,28.722 10.295,0.375 0.375,0.375 0.375,2.855 3.918,2.855 3.918,4.981 0.375,4.981 0.375,7.108 3.918,7.108 3.918,9.234 0.375,9.234 0.375,11.36 3.918,11.36 3.918,13.486 0.375,13.486 0.375,15.611 3.918,15.611 3.918,17.738 0.375,17.738 0.375,19.863 3.918,19.863 "
            id="polygon3653" /><rect
            style="stroke:#000000;stroke-width:0.75"
            x="7.461"
@@ -4822,7 +4828,7 @@
              style="stop-color:#89A4B6" /></linearGradient><polygon
            style="fill:url(#linearGradient3672-3);fill-opacity:1;stroke:#000000;stroke-width:0.75"
            i:knockout="Off"
-           points="3.918,13.486 0.375,13.486 0.375,15.611 3.918,15.611 3.918,17.738 0.375,17.738 0.375,19.863 3.918,19.863 3.918,21.989 0.375,21.989 0.375,24.115 3.918,24.115 3.918,26.241 0.375,26.241 0.375,28.722 10.295,28.722 10.295,0.375 0.375,0.375 0.375,2.855 3.918,2.855 3.918,4.981 0.375,4.981 0.375,7.108 3.918,7.108 3.918,9.234 0.375,9.234 0.375,11.36 3.918,11.36 "
+           points="3.918,17.738 0.375,17.738 0.375,19.863 3.918,19.863 3.918,21.989 0.375,21.989 0.375,24.115 3.918,24.115 3.918,26.241 0.375,26.241 0.375,28.722 10.295,28.722 10.295,0.375 0.375,0.375 0.375,2.855 3.918,2.855 3.918,4.981 0.375,4.981 0.375,7.108 3.918,7.108 3.918,9.234 0.375,9.234 0.375,11.36 3.918,11.36 3.918,13.486 0.375,13.486 0.375,15.611 3.918,15.611 "
            id="polygon3653-5" /><rect
            style="stroke:#000000;stroke-width:0.75"
            x="7.461"
@@ -4985,7 +4991,7 @@
        id="text52974"
        style="white-space:pre;shape-inside:url(#rect52976);display:inline;fill:#ff0000" /><text
        xml:space="preserve"
-       style="font-size:10.5675px;letter-spacing:0.720517px;fill:#ffffff;stroke-width:0.720517"
+       style="font-size:10.5675px;letter-spacing:0px;fill:#ffffff;stroke-width:0.720517"
        x="-232.07703"
        y="41.556789"
        id="text52982"
@@ -4996,7 +5002,7 @@
          x="-232.07703"
          y="41.556789">CCD</tspan></text><text
        xml:space="preserve"
-       style="font-size:5.64714px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:5.64714px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-377.78406"
        y="-122.6585"
        id="text52982-5"
@@ -5007,7 +5013,7 @@
          x="-377.78406"
          y="-122.6585">Grating</tspan></text><text
        xml:space="preserve"
-       style="font-size:7.26061px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:7.26061px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-74.629753"
        y="205.58224"
        id="text52982-5-8"
@@ -5018,7 +5024,7 @@
          x="-74.629753"
          y="205.58224">Mirror</tspan></text><text
        xml:space="preserve"
-       style="font-size:7.26061px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:7.26061px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-125.67912"
        y="59.394829"
        id="text52982-5-8-8"
@@ -5029,7 +5035,7 @@
          x="-125.67912"
          y="59.394829">Oscilloscope</tspan></text><text
        xml:space="preserve"
-       style="font-size:7.26061px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:7.26061px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-305.91983"
        y="68.155205"
        id="text52982-5-5"
@@ -5040,28 +5046,28 @@
          x="-305.91983"
          y="68.155205">Optical Fibre</tspan></text><text
        xml:space="preserve"
-       style="font-size:7.26061px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:7.26061px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-467.57983"
        y="44.531475"
        id="text52982-5-5-2"
        transform="matrix(0.93456681,0.00459998,-0.0605095,1.0697166,0,0)"><tspan
          sodipodi:role="line"
-         id="tspan52980-7-4-7"
          style="font-size:9.68083px;fill:#000000;stroke-width:0.683785"
          x="-467.57983"
-         y="44.531475">External Cavity</tspan><tspan
+         y="44.531475"
+         id="tspan2998">External Cavity Diode </tspan><tspan
          sodipodi:role="line"
          style="font-size:9.68083px;fill:#000000;stroke-width:0.683785"
          x="-467.57983"
          y="56.632511"
-         id="tspan2998">      Diode Laser</tspan><tspan
+         id="tspan25563">    Laser (Littman-Metcalf)</tspan><tspan
          sodipodi:role="line"
          style="font-size:7.26061px;fill:#000000;stroke-width:0.683785"
          x="-467.57983"
-         y="66.525505"
+         y="66.525513"
          id="tspan2946" /></text><text
        xml:space="preserve"
-       style="font-size:7.26061px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:7.26061px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-268.59763"
        y="42.581142"
        id="text52982-5-5-2-5"
@@ -5079,10 +5085,10 @@
          sodipodi:role="line"
          style="font-size:7.26061px;fill:#000000;stroke-width:0.683785"
          x="-268.59763"
-         y="64.575172"
+         y="64.57518"
          id="tspan2946-4" /></text><text
        xml:space="preserve"
-       style="font-size:5.64714px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:5.64714px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-343.60736"
        y="205.33388"
        id="text52982-5-3"
@@ -5093,7 +5099,7 @@
          x="-343.60736"
          y="205.33388">High-precision Mount</tspan></text><text
        xml:space="preserve"
-       style="font-size:7.26061px;letter-spacing:0.127059px;fill:#ffffff;stroke-width:0.683785"
+       style="font-size:7.26061px;letter-spacing:0px;fill:#ffffff;stroke-width:0.683785"
        x="-371.61459"
        y="-302.51141"
        id="text52982-5-9"
@@ -5495,4 +5501,8 @@ AGgkjqMA0Dyc5wMAmKUef7vdbrVaupU0FQDQDEXx/wOQGN/Ouk9vKwAAAABJRU5ErkJggg==
 "
        id="image1791"
        x="-134.37012"
-       y="75.786057" /></g></svg>
+       y="75.786057" /><text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-459.17561,-29.044613)"
+       id="text28068"
+       style="font-size:32px;white-space:pre;shape-inside:url(#rect28070);display:inline;fill:#f2f2f2;stroke:#000000;stroke-width:3.63591;stroke-dasharray:7.27181, 21.8154;stroke-dashoffset:0;stroke-opacity:1" /></g></svg>

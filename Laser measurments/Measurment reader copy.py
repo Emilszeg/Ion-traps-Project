@@ -46,6 +46,7 @@ avaraged2 = []
 avarage_length = 100
 fig = plt.figure(figsize=(10, 6))
 plt.rcParams.update({'font.size': 18})
+fig.set_facecolor((0,0,0,0))
 for i in range(0, len(wavelength1), avarage_length):
     avaraged1.append((-np.mean(df1[df1.columns[1]][i:i+avarage_length]) + df1[df1.columns[1]][400000])/0.4069576699999997)
 plt.plot(wavelength1[::avarage_length][4900:5800], avaraged1[4900:5800])
@@ -57,7 +58,7 @@ print(avaraged2[4900])
 plt.legend(["28mA", "25mA"])
 plt.xlabel("Wavelength (nm) $\pm 10$nm")
 plt.ylabel("Relative intensity")
-plt.title("Avaraged Laser spectrum no feedback lasing at 25mA")
+plt.title("Averaged Laser spectrum with no feedback")
 plt.savefig(".\Results laser spectrum\\no feedback lasers avaraged relative.svg")
 peak_dataframe1 = pandas.DataFrame(data={"wavelength": wavelength1[::avarage_length][4900:5800], "voltage": avaraged1[4900:5800]})
 peak_dataframe2 = pandas.DataFrame(data={"wavelength": wavelength2[::avarage_length][4900:5800], "voltage": avaraged2[4900:5800]})
