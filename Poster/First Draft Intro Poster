@@ -1,3 +1,3 @@
-For this project we built our own external cavity diode laser (ECDL) and Czerny-Turner Spectrometer, to measure the effects that optical feedback has on the output of a diode laser. The output of the ECDL was used as an input for the spectrometer, which visualized our results using an oscilloscope and a CCD we programmed. 
+For this project we built our own external cavity diode laser (ECDL) and Czerny-Turner Spectrometer, to measure the effect that optical feedback has on the output of a diode laser. The output of the ECDL was used as the input for the spectrometer, which visualized our results using an oscilloscope and a CCD we programmed ourselves. 
 
 extra (cut to limit wordiness): The ECDL made use of a Littman-Metcalf configuration, which meant a mirror mounted on a high-precision rotation stage could select which wavelengths were being feedbacked into the diode laser.
