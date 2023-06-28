@@ -1,0 +1,89 @@
+What would happen if you were to reflect
+the output of a dialed laser back upon itself?
+To be able to answer this question
+we must first look at how a diode laser actually
+produces light.
+In it's essence
+within a diode laser
+exists multiple energy levels
+which electrons can find themselves in.
+Shown here is a simple two state system
+with a ground state and an excited state.
+Electrons from the ground state
+can be promoted to the excited state using a current,
+from which they can spontaneously omit a photon
+to return back to the ground state.
+The energy of the photon that they emit
+is equal to the energy gap between the two states.
+This process can be repeated with many electrons
+at the same time,
+all emitting a photon with similar energy
+and wavelength.
+As mentioned before
+the emitted wave has an energy
+equal to that with energy gap between the two states.
+This means that
+once it's reflected back into
+the cavity of the diode laser
+it has the right amount of energy to promote
+electrons from the ground state to the excited state.
+It acts as a driving force
+for the oscillation of electrons between the two states
+enhancing the emission of this particular wavelength.
+So far we've only been looking at a two state system
+however in practice
+diode lasers have many energy levels.
+This means that there are
+energy gaps between these levels
+of varying magnitudes.
+So a whole spectrum of wavelengths
+are emitted.
+These emitted wavelengths
+are known as the modes of the laser.
+Of particular interest to us is what would happen if we
+only reflected a certain mode
+back into the laser cavity.
+This can be done using a grating
+which spatially separates
+the different modes of the laser.
+Subsequently,
+a high precision rotation stage
+can be rotated to select
+which particular mode is reflected back into the laser.
+As you can see
+depending on which mode is reflected back,
+the nature of the output of the laser changes.
+As explained earlier
+the reflected wavelength acts as a driving force
+for the oscillations of electrons between energy gaps
+equal to the energy of the wave.
+The result is a diode laser
+which emits more light
+with a similar wavelength to that of the reflected mode.
+The final piece of the puzzle
+is how to measure this change.
+Sadly diode lasers do not emit a broad enough spectrum
+to observe this change with the naked eye
+so instead a spectrometer must be used.
+Within the spectrometer
+the laser beam passes through a second grating
+which again reflects the beam at a variable angles
+depending on its wavelength.
+The beam is an incident on a charge couple device,
+also known as a CCD,
+which is able to detect the photons.
+Due to the grating,
+different wavelengths will reach the CCD
+at different points
+which means that
+once it has been calibrated
+the CCD will relate exactly which wavelengths
+are present in your beam.
+And also the extends to which they are present.
+All in all I hope this is answered the age old question:
+What would happen if I point a laser beam back at itself?
+If you would like to learn more about this topic
+you will find much more information online
+under the search prompt optical feedback.
+Thank you for your time
+and I wish you a pleasant day.
